@@ -1,3 +1,7 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 /*
 ====================
 User Navigation Menu
@@ -6,7 +10,7 @@ User Navigation Menu
 .user-menu {
   float: right;
   margin-right: auto;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 .user-menu-link {
@@ -44,7 +48,7 @@ Main Navigation Menu
   padding-right: 8.5rem;
 }
 
-@media only screen and (max-width:1750px) {
+@media only screen and (max-width: 1750px) {
   .navbar-lowa {
     padding-right: 0px;
   }
@@ -82,13 +86,20 @@ Main Navigation Menu
 =========
 Carousels
 =========
-*/
-/* #carousel-secondary{
-  display:block;
-  padding-top:50px;
-  margin-right:25vw;
-  margin-left: 25vw;
-} */
+ */
+#carousel-secondary {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  max-height: 220px;
+  width: 100%;
+}
+.secondary {
+  display: block;
+  width: 970px;
+  margin: auto;
+  margin-bottom: 10rem;
+}
 .carousel-container {
   padding-top: 50px;
   display: block;
@@ -96,9 +107,43 @@ Carousels
   max-height: 100px;
   max-width: 600px;
 }
+.carousel-inner{
+  display:flex;
+  text-align: center;
+}
+.carousel-inner a{
+  color: black;
+  text-decoration: none;
+}
+.secondary-slide{
+  display: flex;
+}
+.secondary-image-caption{
+  display: block;
+}
+
 
 .carousel-indicators {
   padding-top: 50px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  width: 220px;
+}
+.second-set-left{
+  display: none;
+}
+.second-set-right{
+  display: none;
+}
+
+
+.hashtag-text{
+  padding-top: 10rem;
 }
 
 /* 
